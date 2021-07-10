@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c2d583b805.js" crossorigin="anonymous"></script>
+    <title>Flexuse login Form</title>
+    <style>
+        .login-container{
+            display: flex;
+            justify-content: center;
+            
+        }
+        .login-form{
+            display: flex;
+            flex-direction: column;
+            
+        }
+        h2{
+            text-align: center;
+            color: slateblue;
+        }
+        .login-form input,button{
+            font-size: 1.3em;
+            margin-top: 10px;
+            border: 1px solid lightcoral;
+            padding-left: 10px;
+            
+        }
+        .login-form button:hover{
+            color: lightgreen;
+            background-color: lightsalmon;
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+       <nav>
+           <a href="">Home</a>
+           <a href="">Products</a>
+           <a href="">Orders</a>
+           <a href="">About Us</a>
+       </nav> 
+    </header>
+    <section class="login-container">
+        <form action="" class="login-form">
+             <h2>Login</h2>
+             <input type="email" name="email" placeholder="Enter your Email" id="" required>
+             <input type="password" name="password" placeholder="Enter Your Password" id="" required>
+             <button type="Submit">Submit</button>
+        </form>
+    </section>
+</body>
+</html>
