@@ -33,15 +33,30 @@
             background-color: lightsalmon;
 
         }
+        nav a{
+            text-decoration: none;
+            color: black;
+            font-size: 1.5em;
+            margin-right: 15px;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+        }
     </style>
 </head>
 <body>
     <header>
        <nav>
-           <a href="">Home</a>
-           <a href="">Products</a>
-           <a href="">Orders</a>
-           <a href="">About Us</a>
+           <span>
+            <a href="">Home</a>
+            <a href="">Products</a>
+            <a href="">Orders</a>
+            <a href="">About Us</a>
+           </span>
+           <span>
+            <a href=""><i class="fas fa-user-tie"></i></a>
+           </span>
        </nav> 
     </header>
     <section class="login-container">
