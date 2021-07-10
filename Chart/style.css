@@ -1,0 +1,27 @@
+h1{
+    font-size: 80px;
+    text-align: center;
+    color: yellowgreen;
+}
+#chart-shape {
+    font: 300px/300px serif;
+    text-align: center; 
+    color: limegreen;
+}
+#chart-value {
+    background: conic-gradient(transparent 75%, darkseagreen 75%);
+    mix-blend-mode: screen;
+}
+#chart {
+    width: 300px;
+    height: 300px;
+    display: grid;
+    margin: auto;
+    margin-top: calc(50vh - 150px);
+    background: white;
+}
+#chart * {
+    height: inherit;
+    grid-area: 1 / 1;
+}
+  

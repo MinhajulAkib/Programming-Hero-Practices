@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="../images/a.JPG" style="width:100%">
+          <div class="text">Caption Text</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="../images/b.JPG" style="width:100%">
+          <div class="text">Caption Two</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="../images/c.JPG" style="width:100%">
+          <div class="text">Caption Three</div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+      <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+        
+    <!--this is paragraph-->
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, sit.
+        <b>Minhajul islam akib</b> Lorem ipsum dolor sit, <small>this is mini paragraph</small> amet consectetur adipisicing elit. Ipsum ea optio cumque magni modi nihil repudiandae, esse eum maxime! <i>Hello bangladesh</i>Unde doloremque rem voluptas corporis nulla dolor<strong>I am Minhajul islam</strong> id magni praesentium magnam?
+    </p>
+     <!--this is heading-->
+    <h1>Lorem ipsum dolor sit amet.</h1>
+    <h2>Lorem ipsum dolor sit amet.</h2>
+    <h3>Lorem ipsum dolor sit amet.</h3>
+    <h4>Lorem ipsum dolor sit amet.</h4>
+    <h5>Lorem ipsum dolor sit amet.</h5>
+    <h6>Lorem ipsum dolor sit amet.</h6>
+    <!--ordered and unordered list-->
+    <ul>
+        <li>sakib al hasan</li>
+        <li>mashrafe</li>
+        <li>tamim</li>
+        <li>Mushfique</li>
+        <li>mahmudullah</li>
+        <li>zunayed</li>
+    </ul>
+    <ol>
+        <li>Apple</li>
+        <li>tomato</li>
+        <li>mango</li>
+        <li>jackfruit</li>
+        <li>coffee</li>
+        <li>orange</li>
+    </ol>
+    <!--image-->
+    <img src="../images/a.jpg" alt="akib" width="20%"><br>
+    <a href="https://www.w3schools.com/html/default.asp">Visit this</a>
+    <div class="container">
+        <form>
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname"><br><br>
+            <input type="submit" value="Submit">
+          </form>
+    </div>
+    <!--horizontal row-->
+    <h1>The Main Languages of the Web</h1>
+
+<p>HTML is the standard markup language for creating Web pages. HTML describes the structure of a Web page, and consists of a series of elements. HTML elements tell the browser how to display the content.</p>
+<hr>
+<p>CSS is a language that describes how HTML elements are to be displayed on screen, paper, or in other media. CSS saves a lot of work, because it can control the layout of multiple web pages all at once.</p>
+<hr>
+<!--iframe-->
+<iframe src="https://www.google.com" title="search engine">
+</iframe>
+<!--table-->
+<table>
+    <tr>
+      <th>Month</th>
+      <th>Savings</th>
+    </tr>
+    <tr>
+      <td>January</td>
+      <td>$100</td>
+    </tr>
+    <tr>
+      <td>February</td>
+      <td>$80</td>
+    </tr>
+  </table>
+  <button class="accordion">Section 1</button>
+<div class="panel">
+  <p>Lorem ipsum...</p>
+</div>
+
+<button class="accordion">Section 2</button>
+<div class="panel">
+  <p>Lorem ipsum...</p>
+</div>
+
+<button class="accordion">Section 3</button>
+<div class="panel">
+  <p>Lorem ipsum...</p>
+</div>
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+    </script>
+    <p>Click on the buttons inside the tabbed menu:</p>
+
+    <div id="London" class="tabcontent">
+      <h1>London</h1>
+      <p>London is the capital city of England.</p>
+    </div>
+    
+    <div id="Paris" class="tabcontent">
+      <h1>Paris</h1>
+      <p>Paris is the capital of France.</p> 
+    </div>
+    
+    <div id="Tokyo" class="tabcontent">
+      <h1>Tokyo</h1>
+      <p>Tokyo is the capital of Japan.</p>
+    </div>
+    
+    <div id="Oslo" class="tabcontent">
+      <h1>Oslo</h1>
+      <p>Oslo is the capital of Norway.</p>
+    </div>
+    
+    <button class="tablink" onclick="openCity('London', this, 'red')" id="defaultOpen">London</button>
+    <button class="tablink" onclick="openCity('Paris', this, 'green')">Paris</button>
+    <button class="tablink" onclick="openCity('Tokyo', this, 'blue')">Tokyo</button>
+    <button class="tablink" onclick="openCity('Oslo', this, 'orange')">Oslo</button>
+    <script>
+        function openCity(cityName,elmnt,color) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablink");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].style.backgroundColor = "";
+          }
+          document.getElementById(cityName).style.display = "block";
+          elmnt.style.backgroundColor = color;
+        
+        }
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+        </script>
+<!--footer-->
+<footer>
+    <p>Author: Minhajul islam<br>
+    <a href="akib:akib@gmail.com">akib@gmail.com</a>
+   </p>
+  </footer>
+</body>
+</html>
