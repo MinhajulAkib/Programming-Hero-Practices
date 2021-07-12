@@ -22,7 +22,7 @@ hr {
 }
 .container {
   background-color: #ffffff;
-  width: 870px;
+  /* width: 870px; */
   padding: 30px;
   margin-top: 21px;
   border-radius: 5px;
@@ -92,10 +92,10 @@ hr {
 /* ------------------------------
    "courses styles"
 ------------------------*/
-.courses{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-column-gap: 24px;
+.courses {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 24px;
 }
 .course .course-banner img {
   width: 224px;
@@ -122,4 +122,39 @@ hr {
   -moz-border-radius: 8px;
   -ms-border-radius: 8px;
   -o-border-radius: 8px;
+}
+
+/* Media queries */
+
+/* mobile device */
+@media only screen and (max-width: 688px) {
+  .container {
+    width: 100%;
+  }
+  .players,
+  .blogs,
+  .courses {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .player,
+  .blog {
+    flex-direction: column;
+  }
+}
+
+/* tablet devices */
+@media only screen and (max-width: 688px) and (max-width: 992px) {
+  .container {
+    width: 100%;
+  }
+  .players, .courses {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .blogs {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .player,
+  .blog {
+    flex-direction: column;
+  }
 }
