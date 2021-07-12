@@ -1,6 +1,7 @@
 /* fonts */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 /* Common style */
+
 body {
   font-family: "Poppins", sans-serif;
   background-color: #f3f1ff;
@@ -47,4 +48,31 @@ hr {
 .player-name {
   margin-left: 16px;
   font-size: 18px;
+}
+
+/* ------------------------------
+   "top blogs styles"
+------------------------*/
+
+.blog {
+  display: flex; 
+}
+.blog .thumbnail img {
+  width: 177px;
+  height: 117px;
+}
+.blog-info {
+  margin-left: 16px;
+}
+.blog-title {
+  font-size: 20px;
+}
+.blog-author {
+  color: #9f9f9f;
+  font-size: 16px;
+}
+.blog-author a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #562EFF;
 }
