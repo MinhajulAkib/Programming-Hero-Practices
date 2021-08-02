@@ -1,15 +1,15 @@
-// if (3<5) {
-//     console.log ('yeah!, i will be excuated');
-// }
+if (3<5) {
+    console.log ('yeah!, i will be excuated');
+}
 
 
-// var myName = 'minhajul';
-// if (myName === 'minhaj'){
-//     console.log('ok,executed')
-// }
-// else{
-//     console.log('not ,it not minhaul');
-// }
+var myName = 'minhajul';
+if (myName === 'minhaj'){
+    console.log('ok,executed')
+}
+else{
+    console.log('not ,it not minhaul');
+}
 
 
 // else---if
@@ -25,4 +25,17 @@ else if(whatsDay == 'saturday'){
 }
 else{
     console.log("office day")
+}
+
+
+// Nesting condition
+
+var num = 10;
+if (num >1){
+    if (num > 7){
+        console.log('right');
+    }
+    else{
+        console.log('wrong');
+    }
 }
