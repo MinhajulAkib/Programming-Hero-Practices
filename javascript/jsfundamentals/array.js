@@ -11,7 +11,7 @@ console.log(vowels);
 var vowelsCount = vowels.length;
 console.log(vowelsCount);
 
-// last side in new value added
+// last side new value added
 var arrName = ['rahim', 'karim', 'jabbar', 'halim'];
 onsole.log(arrName);
 arrName.push = ('jodu');
