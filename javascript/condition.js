@@ -1,4 +1,4 @@
-if (3<5) {
+if (3 < 5) { 
     console.log ('yeah!, i will be excuated');
 }
 
@@ -38,4 +38,23 @@ if (num >1){
     else{
         console.log('wrong');
     }
+}
+
+// ------
+
+var danishPrice = 50;
+var butterBreadPrice = 25;
+var toastBiscuitPrice = 10;
+var myBudget = 100;
+if(danishPrice < myBudget){
+    console.log("danish khaye danish jabo");
+}
+else if(butterBreadPrice < myBudget){
+    console.log("butter bon diye cha khamu");
+}
+else if(toastBiscuitPrice < myBudget){
+    console.log("batashsa diye cha khamu");
+}
+else{
+    console.log("mara khamu");
 }
