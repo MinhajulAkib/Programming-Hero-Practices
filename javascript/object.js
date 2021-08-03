@@ -4,4 +4,4 @@ var rahim = {
     address:'dhaka',
     occupation:'businessman'
 }
-console.log(rahim);
+console.log(rahim.name);
