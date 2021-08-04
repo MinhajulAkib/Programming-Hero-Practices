@@ -20,3 +20,12 @@ function multiplyTwoNumbers(n1 , n2){
 // console.log('multiplied numbers:', c);
 var total = multiplyTwoNumbers(12, 4);
 console.log('result value:', total);
+
+
+//abstraction
+function abstraction(num1, num2){
+    var num = num1 -num2;
+    return num;
+}
+var minus = abstraction(20, 10);
+console.log('result is:', minus);
