@@ -1,7 +1,7 @@
-// function funcName(){
-//     console.log("hello");
-// }
-// funcName()
+function funcName(){
+    console.log("hello");
+}
+funcName()
 
 
 function sumMachine(a,b){
