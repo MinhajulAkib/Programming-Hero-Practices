@@ -16,4 +16,4 @@ computer["price"] = 23000;
 var upgradeStorage = 'storage';
 computer['storage'] = '1TB';
 console.log(computer);
-console.log(computerPrice);
+////console.log(computerPrice);//
