@@ -27,7 +27,13 @@
         </section>
     </main>
     <script>
-        console.log(document.body);
+       console.log(document.getElementsByTagName('h3'));
+
+
+       const blogDetails = document.getElementsByTagName('p');
+       for(const p of blogDetails){
+           console.log(p.innerText);
+       }
     </script>
 </body>
 </html>
