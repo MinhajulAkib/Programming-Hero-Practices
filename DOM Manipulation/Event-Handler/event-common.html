@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document object mode;-DOM</title>
+</head>
+<body>
+    <p id="clicking-method"></p>
+    <button onclick=" handleJustFunctionClick()">Just function</button>
+    <button id="event-listener" onclick="handleDirectAndListenEvent()">Direct and Event listener</button>
+    <script>
+        function handleJustFunctionClick(){
+            const clickingMethod =document.getElementById('clicking-method');
+            clickingMethod.innerText = 'set by using function';
+        }
+        //direct and event listener
+        function handleDirectAndListenEvent(){
+            const justclickingMethod = document.getElementById('clicking-method');
+            justclickingMethod.innerText = 'hello bangladesh';
+        }
+        //direct function
+        document.getElementById('event-listener').addEventListener('click', function(){
+            const clickingJustMethod =document.getElementById('clicking-method');
+            clickingJustMethod.innerText = 'hi!look to see good';
+        })
+       
+    </script>
+</body>
+</html>
