@@ -31,3 +31,9 @@ const makepinkbutton = document.getElementById('make-hotpink-button');
    makepinkbutton.addEventListener('click', function(){
     document.body.style.backgroundColor = 'hotpink';
    })
+
+
+   //direct shrtcut
+   document.getElementById('make-lightblue-button').addEventListener('click', function(){
+    document.body.style.backgroundColor = 'lightblue';
+})
