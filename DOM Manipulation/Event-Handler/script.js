@@ -20,5 +20,14 @@ const greenbutton = document.getElementById('make-green-button');
 const makebutton = document.getElementById('make-goldenrod-button');
    makebutton.addEventListener('click', makegoldenrodbutton);
    function makegoldenrodbutton(){
-    document.body.style.backgroundColor ='goldenrod';
+       document.body.style.backgroundColor ='goldenrod';
    }   
+
+
+
+   //add eventlistener
+  
+const makepinkbutton = document.getElementById('make-hotpink-button');
+   makepinkbutton.addEventListener('click', function(){
+    document.body.style.backgroundColor = 'hotpink';
+   })
