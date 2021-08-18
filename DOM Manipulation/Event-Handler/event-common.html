@@ -8,6 +8,8 @@
 </head>
 <body>
     <p id="clicking-method"></p>
+    <input id="name-field" type="text">
+    <button id="update-name">Update</button>
     <button onclick=" handleJustFunctionClick()">Just function</button>
     <button id="event-listener" onclick="handleDirectAndListenEvent()">Direct and Event listener</button>
     <script>
@@ -24,6 +26,14 @@
         document.getElementById('event-listener').addEventListener('click', function(){
             const clickingJustMethod =document.getElementById('clicking-method');
             clickingJustMethod.innerText = 'hi!look to see good';
+        })
+
+        //direct update
+        document.getElementById('update-name').addEventListener('click', function(){
+            const nameField = document.getElementById('name-field');
+            const clickingJustMethod =document.getElementById('clicking-method');
+            clickingJustMethod.innerText = nameField.value;
+            nameField.value = '';
         })
        
     </script>
