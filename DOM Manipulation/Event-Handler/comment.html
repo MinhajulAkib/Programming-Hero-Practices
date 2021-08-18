@@ -19,7 +19,7 @@
             </p>
         </div>
         <div>
-            <p>Add your Comment</p>
+            <p></p>
             <textarea name="" id="new-comment" cols="60" rows="5"></textarea><br>
             <button id="submit-comment">Post</button>
         </div>
@@ -27,7 +27,24 @@
 
 
     <script>
-        
+        // 1. Add button event handler
+        document.getElementById('submit-comment').addEventListener('click', function(){
+            
+            // 2.Get user comment
+           const commentBox = document.getElementById('new-comment');
+           const userComment = commentBox.value;
+          
+           //3.create comment paragraph
+           const newComment =document.createElement('p');
+           newComment.innerText =commentBox.value;
+
+           //4.append the comment
+           const commentcontainer = document.getElementById('comment-container');
+           commentcontainer.appendChild(newComment);
+
+           //5.clean the commen box
+           commentBox.value = '';
+        })
     </script>
 </body>
 </html>
