@@ -20,6 +20,13 @@ if(friends.indexOf('Lion') != -1){
     // console.log('lion exists');
 }
 
+
+if(friends.indexOf('Fox') != -1){
+    // console.log('Fox exists');
+}
+else{
+    console.log('fox does not exists');
+}
 // includes
 if (friends.includes('Lion')) {
     // console.log('Lion exits using includes');
@@ -29,4 +36,4 @@ if (friends.includes('Lion')) {
 const first = [1, 3, 5];
 const second = [4, 6, 8, 9];
 const combined = first.concat(second);
-console.log(combined);
+// console.log(combined);
