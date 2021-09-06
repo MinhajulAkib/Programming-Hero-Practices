@@ -8,6 +8,5 @@ for (let i =0; i <items.length; i++){
 
 //using for..of
 let data = [2,4,3,4,6,7,8,9,2];
-for(const dat of data){
-    console.log(dat);
+for(const ?
 }
