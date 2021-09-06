@@ -12,3 +12,4 @@ let contact = {
     }
 }
 console.log(contact.address.country);
+console.log(contact['firstName']);
