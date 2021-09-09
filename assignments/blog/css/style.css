@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+}
+.container {
+  width: 860px;
+  margin:20px auto 0 auto;
+}
+.blog-post {
+  width: 75%;
+  float: left;
+  padding-right: 30px;
+}
+h1,
+h2 {
+  color: green;
+}
+h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+h2 {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+/* p {
+  text-align: justify;
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+} */
+.main-text {
+  text-align: justify;
+  margin-bottom: 20px;
+}
+.author-text {
+  font-size: 25px;
+}
+.author-box{
+    border-top: 5px solid #808080;
+}
+.other-post {
+  width: 25%;
+  float: left;
+}
+.clarifix
