@@ -28,5 +28,13 @@ let removedItem = student.splice(1);
 ///copy an array
 let shallowCopy = student.slice()
 console.log(shallowCopy);
-
+//concat 3 numbers
 console.log(student);
+const num1 = [1, 2, 3];
+const num2 = [4, 5, 6];
+const num3 = [7, 8, 9];
+
+const numbers = num1.concat(num2, num3);
+
+console.log(numbers);
+// results in [1, 2, 3, 4, 5, 6, 7, 8, 9]
