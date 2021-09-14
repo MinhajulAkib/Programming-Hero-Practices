@@ -19,7 +19,14 @@
 //add an item to the end of an array
 let student = ['name', 'age', 'section', 'class'];
 let newadd = student.push('Orange');
-console.log(newadd);
+//console.log(newadd);
 
 let removedItem = student.splice(1);
-console.log(removedItem);
+//console.log(removedItem);
+
+
+///copy an array
+let shallowCopy = student.slice()
+console.log(shallowCopy);
+
+console.log(student);
