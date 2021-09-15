@@ -50,9 +50,9 @@ let str = new String('JavaScript String Type');
 
 
 //arrow function
-const addThree = (x, y, z) => x +y + z;{
+const addThree = (x, y, z) => x +y + z;
     //{
     //  const sum =x +y + z;
     //  return sum;
     //}
-console.log(addThree(2,4,5));
+console.log(addThree(2,4,5))
