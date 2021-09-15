@@ -27,7 +27,7 @@ let removedItem = student.splice(1);
 
 ///copy an array
 let shallowCopy = student.slice()
-console.log(shallowCopy);
+//console.log(shallowCopy);
 //concat 3 numbers
 console.log(student);
 const num1 = [1, 2, 3];
@@ -36,5 +36,23 @@ const num3 = [7, 8, 9];
 
 const numbers = num1.concat(num2, num3);
 
-console.log(numbers);
-// results in [1, 2, 3, 4, 5, 6, 7, 8, 9]
+// console.log(numbers);
+// // results in [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+
+
+
+
+let str = new String('JavaScript String Type');
+//console.log(str.valueOf());
+//console.log(str.toString());
+//console.log(str.toLocaleString());
+
+
+//arrow function
+const addThree = (x, y, z) => x +y + z;{
+    //{
+    //  const sum =x +y + z;
+    //  return sum;
+    //}
+console.log(addThree(2,4,5));
