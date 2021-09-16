@@ -5,9 +5,8 @@ const student = {
     movies:['hello', 'dhakar mastan']
 }
 const studentJSON = JSON.stringify(student);
-console.log(student);
-console.log(studentJSON);
-
+// console.log(student);
+// console.log(studentJSON);
 //JSON convert into object
 const studentObj = JSON.parse(studentJSON);
-console.log(studentObj);
+// console.log(studentObj);
